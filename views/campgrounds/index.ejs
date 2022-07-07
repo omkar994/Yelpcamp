@@ -1,0 +1,17 @@
+<html>
+    <head><title>My Campgrounds</title></head>
+
+    <body>
+        <h1>All Campgrounds</h1>
+        <div>
+            <a href="/campground/new">NEW Campground</a>
+        </div>
+        
+        <ul>
+            <% for(campground of campgrounds){ %>
+               <li> <a href="/campground/<%= campground._id %>"> <%= campground.title  %></a> </li> 
+                <% } %> 
+            
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <head><title>Update CampGround</title></head>
+    <body>
+        <form action="/campground/<%=campground._id%>?_method=PUT" method="POST">
+            <div>
+                <label for="title">Title</label>
+                <input type="text" name="campground[title]" id="title" value="<%=campground.title %>">
+            </div>
+            <div>
+                <label for="location">Location</label>
+                <input type="text" name="campground[location]" id="location" value="<%=campground.location%>">
+            </div>
+            <button>Save</button>
+        </form>
+    </body>
+</html>
